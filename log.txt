@@ -1,0 +1,708 @@
+[2026-03-18T18:56:54.569Z] Window lost focus (blur)
+[2026-03-18T18:56:56.775Z] Window lost focus (blur)
+[2026-03-18T18:57:00.154Z] Window lost focus (blur)
+[2026-03-18T18:57:00.155Z] Window lost focus (blur)
+[2026-03-18T18:57:06.757Z] Window lost focus (blur)
+[2026-03-18T18:58:13.003Z] Window lost focus (blur)
+[2026-03-18T18:58:38.443Z] Window lost focus (blur)
+[2026-03-18T18:58:41.362Z] Window lost focus (blur)
+[2026-03-18T18:58:43.684Z] Window lost focus (blur)
+[2026-03-18T18:59:54.826Z] Window lost focus (blur)
+[2026-03-18T19:00:09.675Z] Window lost focus (blur)
+[2026-03-18T19:00:17.576Z] Window lost focus (blur)
+[2026-03-18T19:04:48.171Z] Window lost focus (blur)
+[2026-03-18T19:04:49.718Z] Window lost focus (blur)
+[2026-03-18T19:04:52.995Z] Window lost focus (blur)
+[2026-03-18T19:04:52.995Z] Window lost focus (blur)
+[2026-03-18T19:04:58.884Z] Window lost focus (blur)
+[2026-03-18T19:08:15.584Z] Window lost focus (blur)
+[2026-03-18T19:08:31.430Z] Window lost focus (blur)
+[2026-03-18T19:08:34.931Z] Window lost focus (blur)
+[2026-03-18T19:08:34.932Z] Window lost focus (blur)
+[2026-03-18T19:08:44.026Z] Window lost focus (blur)
+[2026-03-18T19:10:50.509Z] Window lost focus (blur)
+[2026-03-18T19:10:55.064Z] Window lost focus (blur)
+[2026-03-18T19:10:55.065Z] Window lost focus (blur)
+[2026-03-18T19:10:59.900Z] Window lost focus (blur)
+[2026-03-18T19:15:49.609Z] Window lost focus (blur)
+[2026-03-18T19:15:50.809Z] Window lost focus (blur)
+[2026-03-18T19:15:53.591Z] Window lost focus (blur)
+[2026-03-18T19:15:55.541Z] Window lost focus (blur)
+[2026-03-18T19:16:09.332Z] Window lost focus (blur)
+[2026-03-18T19:17:03.359Z] Window lost focus (blur)
+[2026-03-18T19:17:24.833Z] Window lost focus (blur)
+[2026-03-18T19:17:47.622Z] Window lost focus (blur)
+[2026-03-18T19:22:08.851Z] Window lost focus (blur)
+[2026-03-18T19:22:15.596Z] Window lost focus (blur)
+[2026-03-18T19:23:14.347Z] Window lost focus (blur)
+[2026-03-18T19:23:15.952Z] Window lost focus (blur)
+[2026-03-18T19:27:10.332Z] Window lost focus (blur)
+[2026-03-18T19:29:40.301Z] Window lost focus (blur)
+[2026-03-18T19:29:41.751Z] Window lost focus (blur)
+[2026-03-18T19:29:46.408Z] Window lost focus (blur)
+[2026-03-18T19:30:53.237Z] Window lost focus (blur)
+[2026-03-18T19:32:13.944Z] Window lost focus (blur)
+[2026-03-18T19:32:16.455Z] Window lost focus (blur)
+[2026-03-18T19:32:16.456Z] Window lost focus (blur)
+[2026-03-18T19:32:20.411Z] Window lost focus (blur)
+[2026-03-18T19:32:25.772Z] Window lost focus (blur)
+[2026-03-18T19:32:25.772Z] Window lost focus (blur)
+[2026-03-18T19:32:30.537Z] Window lost focus (blur)
+[2026-03-18T19:33:29.100Z] Window lost focus (blur)
+[2026-03-18T19:34:14.340Z] Window lost focus (blur)
+[2026-03-18T19:34:15.371Z] Window lost focus (blur)
+[2026-03-18T19:34:19.731Z] Window lost focus (blur)
+[2026-03-18T19:34:19.732Z] Window lost focus (blur)
+[2026-03-18T19:34:33.744Z] Window lost focus (blur)
+[2026-03-18T19:34:53.934Z] Window lost focus (blur)
+[2026-03-18T19:38:01.654Z] Window lost focus (blur)
+[2026-03-18T19:41:39.275Z] Window lost focus (blur)
+[2026-03-18T19:41:43.677Z] Window lost focus (blur)
+[2026-03-18T19:44:17.782Z] Window lost focus (blur)
+[2026-03-18T19:48:32.199Z] Window lost focus (blur)
+[2026-03-18T19:48:54.759Z] Window lost focus (blur)
+[2026-03-18T19:50:42.405Z] Window lost focus (blur)
+[2026-03-18T20:03:04.947Z] Window lost focus (blur)
+[2026-03-18T20:10:16.841Z] Window lost focus (blur)
+[2026-03-18T20:10:33.252Z] Window lost focus (blur)
+[2026-03-18T20:12:15.142Z] Window lost focus (blur)
+[2026-03-18T20:12:16.721Z] Window lost focus (blur)
+[2026-03-18T20:12:20.732Z] Window lost focus (blur)
+[2026-03-18T20:12:40.164Z] Window lost focus (blur)
+[2026-03-18T20:18:31.171Z] Window lost focus (blur)
+[2026-03-18T20:29:29.227Z] Window lost focus (blur)
+[2026-03-18T20:55:45.682Z] Window lost focus (blur)
+[2026-03-18T20:55:54.521Z] Window lost focus (blur)
+[2026-03-19T01:46:27.904Z] Window lost focus (blur)
+[2026-03-19T01:46:36.089Z] Window lost focus (blur)
+[2026-03-19T01:54:54.946Z] Window lost focus (blur)
+[2026-03-19T01:54:56.005Z] Window lost focus (blur)
+[2026-03-19T01:55:08.541Z] Window lost focus (blur)
+[2026-03-19T02:20:37.112Z] Window lost focus (blur)
+[2026-03-19T02:41:13.615Z] Window lost focus (blur)
+[2026-03-19T02:42:32.746Z] Window lost focus (blur)
+[2026-03-19T02:42:46.360Z] Window lost focus (blur)
+[2026-03-19T02:52:23.261Z] Window lost focus (blur)
+[2026-03-19T02:53:19.074Z] Window lost focus (blur)
+[2026-03-19T03:06:05.175Z] Window lost focus (blur)
+[2026-03-19T03:06:06.364Z] Window lost focus (blur)
+[2026-03-19T03:06:53.359Z] Window lost focus (blur)
+[2026-03-19T03:06:55.043Z] BLOCKED key: Meta (ctrl:false alt:false meta:true shift:false)
+[2026-03-19T03:06:55.144Z] Window lost focus (blur)
+[2026-03-19T03:07:15.000Z] BLOCKED key: Meta (ctrl:false alt:false meta:true shift:false)
+[2026-03-19T03:07:15.194Z] Window lost focus (blur)
+[2026-03-19T03:07:16.777Z] BLOCKED key: Meta (ctrl:false alt:false meta:true shift:false)
+[2026-03-19T03:07:17.012Z] Window lost focus (blur)
+[2026-03-19T03:07:18.144Z] BLOCKED key: Meta (ctrl:false alt:false meta:true shift:false)
+[2026-03-19T03:07:18.643Z] Window lost focus (blur)
+[2026-03-19T03:07:19.355Z] BLOCKED key: Meta (ctrl:false alt:false meta:true shift:false)
+[2026-03-19T03:07:19.609Z] Window lost focus (blur)
+[2026-03-19T03:07:20.434Z] BLOCKED key: Meta (ctrl:false alt:false meta:true shift:false)
+[2026-03-19T03:07:20.668Z] Window lost focus (blur)
+[2026-03-19T03:07:23.124Z] BLOCKED key: Meta (ctrl:false alt:false meta:true shift:false)
+[2026-03-19T03:07:23.287Z] Window lost focus (blur)
+[2026-03-19T03:07:26.825Z] Window lost focus (blur)
+[2026-03-19T03:07:33.109Z] BLOCKED key: Meta (ctrl:false alt:false meta:true shift:false)
+[2026-03-19T03:07:33.256Z] Window lost focus (blur)
+[2026-03-19T03:11:11.515Z] BLOCKED key: Meta (ctrl:false alt:false meta:true shift:false)
+[2026-03-19T03:11:11.688Z] Window lost focus (blur)
+[2026-03-19T03:12:55.244Z] Window lost focus (blur)
+[2026-03-19T03:13:01.414Z] Window lost focus (blur)
+[2026-03-19T03:13:11.105Z] Window lost focus (blur)
+[2026-03-19T03:13:13.086Z] Window lost focus (blur)
+[2026-03-19T03:16:36.975Z] Window lost focus (blur)
+[2026-03-19T03:16:38.967Z] Window lost focus (blur)
+[2026-03-19T03:16:40.337Z] Window lost focus (blur)
+[2026-03-19T03:16:46.397Z] Window lost focus (blur)
+[2026-03-19T03:17:15.417Z] Window lost focus (blur)
+[2026-03-19T03:17:33.044Z] Window lost focus (blur)
+[2026-03-19T03:22:21.382Z] Window lost focus (blur)
+[2026-03-19T03:22:21.387Z] TAMPER #1: Window lost focus / tab switch / minimise
+[2026-03-19T03:22:21.517Z] TAMPER #2: Page became hidden (visibilitychange)
+[2026-03-19T03:22:23.142Z] Window lost focus (blur)
+[2026-03-19T03:22:23.145Z] TAMPER #3: Window lost focus / tab switch / minimise
+[2026-03-19T03:22:23.153Z] TAMPER #4: Page became hidden (visibilitychange)
+[2026-03-19T03:22:24.775Z] Window lost focus (blur)
+[2026-03-19T03:22:24.776Z] TAMPER #5: Window lost focus / tab switch / minimise
+[2026-03-19T03:22:27.034Z] TAMPER #6: Page became hidden (visibilitychange)
+[2026-03-19T03:22:49.403Z] Window lost focus (blur)
+[2026-03-19T03:22:49.404Z] TAMPER #7: Window lost focus / tab switch / minimise
+[2026-03-19T03:23:30.834Z] TAMPER #8: Page became hidden (visibilitychange)
+[2026-03-19T03:23:30.835Z] Window lost focus (blur)
+[2026-03-19T03:23:30.836Z] TAMPER #9: Window lost focus / tab switch / minimise
+[2026-03-19T03:24:48.390Z] Window lost focus (blur)
+[2026-03-19T03:24:48.391Z] TAMPER #1: Window lost focus / tab switch / minimise
+[2026-03-19T03:24:56.473Z] Window lost focus (blur)
+[2026-03-19T03:24:56.474Z] TAMPER #2: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:04.036Z] Window lost focus (blur)
+[2026-03-19T03:25:04.036Z] TAMPER #3: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:04.981Z] Window lost focus (blur)
+[2026-03-19T03:25:04.982Z] TAMPER #4: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:06.888Z] Window lost focus (blur)
+[2026-03-19T03:25:06.889Z] TAMPER #5: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:10.083Z] Window lost focus (blur)
+[2026-03-19T03:25:10.084Z] TAMPER #6: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:14.563Z] Window lost focus (blur)
+[2026-03-19T03:25:14.563Z] TAMPER #7: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:17.196Z] Window lost focus (blur)
+[2026-03-19T03:25:17.197Z] TAMPER #8: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:22.788Z] Window lost focus (blur)
+[2026-03-19T03:25:22.788Z] TAMPER #9: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:30.678Z] Window lost focus (blur)
+[2026-03-19T03:25:30.679Z] TAMPER #10: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:32.253Z] TAMPER #11: Page became hidden (visibilitychange)
+[2026-03-19T03:25:36.374Z] Window lost focus (blur)
+[2026-03-19T03:25:36.375Z] TAMPER #12: Window lost focus / tab switch / minimise
+[2026-03-19T03:25:36.519Z] TAMPER #13: Page became hidden (visibilitychange)
+[2026-03-19T03:27:03.459Z] Window lost focus (blur)
+[2026-03-19T03:27:03.460Z] TAMPER #14: Window lost focus / tab switch / minimise
+[2026-03-19T03:27:14.128Z] Window lost focus (blur)
+[2026-03-19T03:27:14.129Z] TAMPER #15: Window lost focus / tab switch / minimise
+[2026-03-19T03:27:15.291Z] Window lost focus (blur)
+[2026-03-19T03:27:15.292Z] TAMPER #16: Window lost focus / tab switch / minimise
+[2026-03-19T03:27:18.881Z] Window lost focus (blur)
+[2026-03-19T03:27:18.881Z] TAMPER #17: Window lost focus / tab switch / minimise
+[2026-03-19T03:27:20.178Z] TAMPER #18: Page became hidden (visibilitychange)
+[2026-03-19T03:28:54.434Z] TAMPER #19: Page became hidden (visibilitychange)
+[2026-03-19T03:29:21.836Z] Window lost focus (blur)
+[2026-03-19T03:29:21.837Z] TAMPER #1: Window lost focus / tab switch / minimise
+[2026-03-19T03:29:23.920Z] Window lost focus (blur)
+[2026-03-19T03:29:23.921Z] TAMPER #2: Window lost focus / tab switch / minimise
+[2026-03-19T03:29:27.677Z] Window lost focus (blur)
+[2026-03-19T03:29:27.677Z] TAMPER #3: Window lost focus / tab switch / minimise
+[2026-03-19T03:29:37.636Z] TAMPER #4: Page became hidden (visibilitychange)
+[2026-03-19T03:29:38.752Z] TAMPER #5: Page became hidden (visibilitychange)
+[2026-03-19T03:29:42.642Z] TAMPER #6: Page became hidden (visibilitychange)
+[2026-03-19T03:29:44.283Z] TAMPER #7: Page became hidden (visibilitychange)
+[2026-03-19T03:29:44.870Z] TAMPER #8: Page became hidden (visibilitychange)
+[2026-03-19T03:29:46.214Z] TAMPER #9: Page became hidden (visibilitychange)
+[2026-03-19T03:29:47.725Z] TAMPER #10: Page became hidden (visibilitychange)
+[2026-03-19T03:29:50.838Z] TAMPER #11: Page became hidden (visibilitychange)
+[2026-03-19T03:29:55.438Z] TAMPER #12: Page became hidden (visibilitychange)
+[2026-03-19T03:29:59.309Z] Window lost focus (blur)
+[2026-03-19T03:29:59.310Z] TAMPER #13: Window lost focus / tab switch / minimise
+[2026-03-19T03:30:03.028Z] TAMPER #14: Page became hidden (visibilitychange)
+[2026-03-19T03:30:06.252Z] TAMPER #15: Page became hidden (visibilitychange)
+[2026-03-19T03:30:45.722Z] Window lost focus (blur)
+[2026-03-19T03:30:45.724Z] TAMPER #16: Window lost focus / tab switch / minimise
+[2026-03-19T03:30:48.015Z] Window lost focus (blur)
+[2026-03-19T03:30:48.016Z] TAMPER #17: Window lost focus / tab switch / minimise
+[2026-03-19T03:30:48.017Z] Window lost focus (blur)
+[2026-03-19T03:30:48.018Z] TAMPER #18: Window lost focus / tab switch / minimise
+[2026-03-19T03:30:51.845Z] TAMPER #19: Page became hidden (visibilitychange)
+[2026-03-19T03:31:30.538Z] Window lost focus (blur)
+[2026-03-19T03:31:30.540Z] TAMPER #1: Window lost focus / tab switch / minimise
+[2026-03-19T03:31:33.075Z] Window lost focus (blur)
+[2026-03-19T03:31:33.076Z] TAMPER #2: Window lost focus / tab switch / minimise
+[2026-03-19T03:31:41.406Z] Window lost focus (blur)
+[2026-03-19T03:31:41.408Z] TAMPER #3: Window lost focus / tab switch / minimise
+[2026-03-19T03:31:43.807Z] TAMPER #4: Page became hidden (visibilitychange)
+[2026-03-19T03:35:05.624Z] Window lost focus (blur)
+[2026-03-19T03:35:06.126Z] TAMPER #1: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:35:14.147Z] Window lost focus (blur)
+[2026-03-19T03:35:18.570Z] Window lost focus (blur)
+[2026-03-19T03:35:19.623Z] Window lost focus (blur)
+[2026-03-19T03:35:21.925Z] Window lost focus (blur)
+[2026-03-19T03:35:32.310Z] Window lost focus (blur)
+[2026-03-19T03:35:37.468Z] Window lost focus (blur)
+[2026-03-19T03:35:40.013Z] Window lost focus (blur)
+[2026-03-19T03:35:46.673Z] Window lost focus (blur)
+[2026-03-19T03:35:47.181Z] TAMPER #1: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:36:46.898Z] Window lost focus (blur)
+[2026-03-19T03:36:47.506Z] TAMPER #2: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:37:29.098Z] Window lost focus (blur)
+[2026-03-19T03:39:53.397Z] Window lost focus (blur)
+[2026-03-19T03:39:56.437Z] Window lost focus (blur)
+[2026-03-19T03:40:09.432Z] Window lost focus (blur)
+[2026-03-19T03:40:29.898Z] Window lost focus (blur)
+[2026-03-19T03:40:31.401Z] Window lost focus (blur)
+[2026-03-19T03:40:35.377Z] Window lost focus (blur)
+[2026-03-19T03:40:35.378Z] Window lost focus (blur)
+[2026-03-19T03:40:35.889Z] TAMPER #1: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:40:35.890Z] TAMPER #2: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:40:48.707Z] Window lost focus (blur)
+[2026-03-19T03:40:48.708Z] Window lost focus (blur)
+[2026-03-19T03:40:51.847Z] Window lost focus (blur)
+[2026-03-19T03:41:05.596Z] Window lost focus (blur)
+[2026-03-19T03:41:39.278Z] Window lost focus (blur)
+[2026-03-19T03:41:41.055Z] Window lost focus (blur)
+[2026-03-19T03:41:41.571Z] TAMPER #1: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:41:44.117Z] Window lost focus (blur)
+[2026-03-19T03:41:44.624Z] TAMPER #2: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:41:55.324Z] Window lost focus (blur)
+[2026-03-19T03:42:05.309Z] Window lost focus (blur)
+[2026-03-19T03:42:07.241Z] Window lost focus (blur)
+[2026-03-19T03:42:08.518Z] TAMPER #3: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:42:13.251Z] Window lost focus (blur)
+[2026-03-19T03:44:41.515Z] Window lost focus (blur)
+[2026-03-19T03:44:42.017Z] TAMPER #4: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:44:47.300Z] Window lost focus (blur)
+[2026-03-19T03:45:03.409Z] Window lost focus (blur)
+[2026-03-19T03:45:04.866Z] Window lost focus (blur)
+[2026-03-19T03:45:09.886Z] Window lost focus (blur)
+[2026-03-19T03:45:24.546Z] Window lost focus (blur)
+[2026-03-19T03:45:24.547Z] TAMPER #1: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:25.860Z] Window lost focus (blur)
+[2026-03-19T03:45:25.861Z] TAMPER #2: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:26.668Z] Window lost focus (blur)
+[2026-03-19T03:45:26.673Z] TAMPER #3: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:28.348Z] Window lost focus (blur)
+[2026-03-19T03:45:28.348Z] TAMPER #4: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:29.224Z] Window lost focus (blur)
+[2026-03-19T03:45:29.228Z] TAMPER #5: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:29.707Z] Window lost focus (blur)
+[2026-03-19T03:45:29.709Z] TAMPER #6: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:30.948Z] Window lost focus (blur)
+[2026-03-19T03:45:30.951Z] TAMPER #7: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:31.853Z] Window lost focus (blur)
+[2026-03-19T03:45:31.855Z] TAMPER #8: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:31.856Z] Window lost focus (blur)
+[2026-03-19T03:45:31.856Z] TAMPER #9: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:37.292Z] Window lost focus (blur)
+[2026-03-19T03:45:37.296Z] TAMPER #10: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:38.086Z] Window lost focus (blur)
+[2026-03-19T03:45:38.090Z] TAMPER #11: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:45:39.140Z] Window lost focus (blur)
+[2026-03-19T03:45:39.142Z] Window lost focus (blur)
+[2026-03-19T03:45:41.440Z] Window lost focus (blur)
+[2026-03-19T03:45:41.443Z] TAMPER #12: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:47:24.198Z] Window lost focus (blur)
+[2026-03-19T03:47:24.199Z] TAMPER #13: Window lost focus — tab switch / minimise / Win+D
+[2026-03-19T03:47:37.398Z] Window lost focus (blur)
+[2026-03-19T03:47:39.212Z] Window lost focus (blur)
+[2026-03-19T03:47:39.214Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T03:47:39.385Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:47:41.020Z] Window lost focus (blur)
+[2026-03-19T03:47:45.007Z] Window lost focus (blur)
+[2026-03-19T03:47:54.325Z] Window lost focus (blur)
+[2026-03-19T03:47:54.328Z] TAMPER #3: Window lost focus (editor focused) — tab switch
+[2026-03-19T03:47:54.490Z] TAMPER #4: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:47:55.268Z] Window lost focus (blur)
+[2026-03-19T03:47:55.271Z] TAMPER #5: Window lost focus (editor focused) — tab switch
+[2026-03-19T03:47:55.274Z] TAMPER #6: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:47:55.972Z] TAMPER #7: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:47:57.184Z] Window lost focus (blur)
+[2026-03-19T03:48:13.298Z] Window lost focus (blur)
+[2026-03-19T03:48:13.302Z] TAMPER #8: Window lost focus (editor focused) — tab switch
+[2026-03-19T03:48:13.458Z] TAMPER #9: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:48:15.683Z] TAMPER #10: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:48:15.685Z] Window lost focus (blur)
+[2026-03-19T03:49:39.051Z] Window lost focus (blur)
+[2026-03-19T03:49:48.067Z] Window lost focus (blur)
+[2026-03-19T03:49:48.225Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:49:51.252Z] Window lost focus (blur)
+[2026-03-19T03:49:51.254Z] TAMPER #2: Window lost focus (editor focused) — tab switch
+[2026-03-19T03:49:51.257Z] TAMPER #3: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:50:08.257Z] Window lost focus (blur)
+[2026-03-19T03:50:08.263Z] TAMPER #4: Window lost focus (editor focused) — tab switch
+[2026-03-19T03:50:10.744Z] TAMPER #5: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:50:23.791Z] Window lost focus (blur)
+[2026-03-19T03:50:23.797Z] TAMPER #6: Window lost focus (editor focused) — tab switch
+[2026-03-19T03:51:12.673Z] TAMPER #7: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:51:12.675Z] Window lost focus (blur)
+[2026-03-19T03:59:53.041Z] Window lost focus (blur)
+[2026-03-19T03:59:53.043Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T03:59:53.203Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T03:59:54.044Z] Window lost focus (blur)
+[2026-03-19T03:59:54.046Z] TAMPER #3: Window lost focus (editor focused) — tab switch
+[2026-03-19T03:59:54.054Z] TAMPER #4: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T04:00:00.465Z] Window lost focus (blur)
+[2026-03-19T04:00:02.877Z] Window lost focus (blur)
+[2026-03-19T04:00:05.676Z] Window lost focus (blur)
+[2026-03-19T04:00:05.678Z] TAMPER #5: Window lost focus (editor focused) — tab switch
+[2026-03-19T04:00:05.829Z] TAMPER #6: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T04:00:26.016Z] TAMPER #7: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T04:00:26.017Z] Window lost focus (blur)
+[2026-03-19T11:22:43.697Z] Window lost focus (blur)
+[2026-03-19T11:22:43.700Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:22:47.506Z] Window lost focus (blur)
+[2026-03-19T11:22:50.902Z] Window lost focus (blur)
+[2026-03-19T11:23:14.449Z] Window lost focus (blur)
+[2026-03-19T11:23:14.651Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:24:37.981Z] Window lost focus (blur)
+[2026-03-19T11:24:37.985Z] TAMPER #3: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:24:37.986Z] Window lost focus (blur)
+[2026-03-19T11:24:37.987Z] TAMPER #4: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:24:42.815Z] Window lost focus (blur)
+[2026-03-19T11:24:42.816Z] Window lost focus (blur)
+[2026-03-19T11:24:46.250Z] Window lost focus (blur)
+[2026-03-19T11:24:46.253Z] Window lost focus (blur)
+[2026-03-19T11:24:48.174Z] Window lost focus (blur)
+[2026-03-19T11:24:48.177Z] Window lost focus (blur)
+[2026-03-19T11:24:52.475Z] Window lost focus (blur)
+[2026-03-19T11:24:52.478Z] Window lost focus (blur)
+[2026-03-19T11:24:58.103Z] TAMPER #5: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:24:58.114Z] Window lost focus (blur)
+[2026-03-19T11:25:23.679Z] Window lost focus (blur)
+[2026-03-19T11:25:23.682Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:25:26.211Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:25:26.213Z] Window lost focus (blur)
+[2026-03-19T11:25:36.455Z] Window lost focus (blur)
+[2026-03-19T11:25:38.090Z] Window lost focus (blur)
+[2026-03-19T11:25:42.143Z] Window lost focus (blur)
+[2026-03-19T11:25:42.145Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:25:54.252Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:25:54.255Z] Window lost focus (blur)
+[2026-03-19T11:26:08.060Z] Window lost focus (blur)
+[2026-03-19T11:26:08.066Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:26:08.291Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:26:09.118Z] Window lost focus (blur)
+[2026-03-19T11:26:09.128Z] TAMPER #3: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:26:09.274Z] TAMPER #4: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:26:09.986Z] Window lost focus (blur)
+[2026-03-19T11:26:09.992Z] TAMPER #5: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:26:10.119Z] TAMPER #6: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:26:11.280Z] TAMPER #7: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:26:11.284Z] Window lost focus (blur)
+[2026-03-19T11:27:11.710Z] Window lost focus (blur)
+[2026-03-19T11:27:13.929Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:27:15.321Z] Window lost focus (blur)
+[2026-03-19T11:27:17.776Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:27:53.827Z] Window lost focus (blur)
+[2026-03-19T11:27:55.775Z] Window lost focus (blur)
+[2026-03-19T11:27:55.776Z] Window lost focus (blur)
+[2026-03-19T11:27:56.865Z] Window lost focus (blur)
+[2026-03-19T11:27:56.866Z] Window lost focus (blur)
+[2026-03-19T11:27:58.744Z] Window lost focus (blur)
+[2026-03-19T11:27:58.748Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:27:58.749Z] Window lost focus (blur)
+[2026-03-19T11:27:58.752Z] TAMPER #2: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:28:00.661Z] Window lost focus (blur)
+[2026-03-19T11:28:00.662Z] Window lost focus (blur)
+[2026-03-19T11:28:01.356Z] Window lost focus (blur)
+[2026-03-19T11:28:01.357Z] Window lost focus (blur)
+[2026-03-19T11:28:06.862Z] Window lost focus (blur)
+[2026-03-19T11:28:07.968Z] Window lost focus (blur)
+[2026-03-19T11:28:07.969Z] Window lost focus (blur)
+[2026-03-19T11:28:13.281Z] Window lost focus (blur)
+[2026-03-19T11:28:13.284Z] Window lost focus (blur)
+[2026-03-19T11:28:25.057Z] Window lost focus (blur)
+[2026-03-19T11:28:25.061Z] Window lost focus (blur)
+[2026-03-19T11:28:27.300Z] Window lost focus (blur)
+[2026-03-19T11:28:27.306Z] Window lost focus (blur)
+[2026-03-19T11:28:33.860Z] Window lost focus (blur)
+[2026-03-19T11:28:33.864Z] Window lost focus (blur)
+[2026-03-19T11:28:35.814Z] Window lost focus (blur)
+[2026-03-19T11:28:35.816Z] Window lost focus (blur)
+[2026-03-19T11:28:46.605Z] Window lost focus (blur)
+[2026-03-19T11:29:02.647Z] TAMPER #3: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:29:02.650Z] Window lost focus (blur)
+[2026-03-19T11:31:59.493Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:31:59.498Z] Window lost focus (blur)
+[2026-03-19T11:42:28.861Z] Window lost focus (blur)
+[2026-03-19T11:43:18.641Z] Window lost focus (blur)
+[2026-03-19T11:43:18.642Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T11:43:20.773Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:43:22.116Z] TAMPER #3: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:43:22.117Z] Window lost focus (blur)
+[2026-03-19T11:48:40.291Z] Window lost focus (blur)
+[2026-03-19T11:48:42.022Z] Window lost focus (blur)
+[2026-03-19T11:48:42.024Z] Window lost focus (blur)
+[2026-03-19T11:48:43.429Z] Window lost focus (blur)
+[2026-03-19T11:48:43.609Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:48:52.279Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T11:48:52.280Z] Window lost focus (blur)
+[2026-03-19T12:35:30.910Z] Window lost focus (blur)
+[2026-03-19T12:35:30.911Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:35:31.130Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:38:33.518Z] Window lost focus (blur)
+[2026-03-19T12:38:33.519Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:38:33.694Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:38:50.098Z] Window lost focus (blur)
+[2026-03-19T12:38:50.100Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:38:50.204Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:39:35.964Z] Window lost focus (blur)
+[2026-03-19T12:39:35.969Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:39:36.142Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:39:53.661Z] Window lost focus (blur)
+[2026-03-19T12:39:53.664Z] TAMPER #3: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:39:54.511Z] TAMPER #4: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:02.013Z] Window lost focus (blur)
+[2026-03-19T12:40:02.014Z] TAMPER #5: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:02.174Z] TAMPER #6: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:08.065Z] Window lost focus (blur)
+[2026-03-19T12:40:08.066Z] TAMPER #7: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:08.210Z] TAMPER #8: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:11.821Z] Window lost focus (blur)
+[2026-03-19T12:40:11.824Z] TAMPER #9: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:11.960Z] TAMPER #10: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:14.600Z] Window lost focus (blur)
+[2026-03-19T12:40:14.601Z] TAMPER #11: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:14.765Z] TAMPER #12: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:22.891Z] Window lost focus (blur)
+[2026-03-19T12:40:22.895Z] TAMPER #13: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:23.050Z] TAMPER #14: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:24.916Z] Window lost focus (blur)
+[2026-03-19T12:40:25.070Z] TAMPER #15: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:30.616Z] Window lost focus (blur)
+[2026-03-19T12:40:30.617Z] TAMPER #16: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:30.759Z] TAMPER #17: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:39.911Z] Window lost focus (blur)
+[2026-03-19T12:40:39.916Z] TAMPER #18: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:40.094Z] TAMPER #19: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:42.940Z] Window lost focus (blur)
+[2026-03-19T12:40:42.942Z] TAMPER #20: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:43.094Z] TAMPER #21: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:46.173Z] Window lost focus (blur)
+[2026-03-19T12:40:46.174Z] TAMPER #22: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:46.329Z] TAMPER #23: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:51.628Z] Window lost focus (blur)
+[2026-03-19T12:40:51.630Z] TAMPER #24: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:51.785Z] TAMPER #25: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:40:53.851Z] Window lost focus (blur)
+[2026-03-19T12:40:53.855Z] TAMPER #26: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:40:53.989Z] TAMPER #27: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:41:04.690Z] Window lost focus (blur)
+[2026-03-19T12:41:04.694Z] TAMPER #28: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:41:04.861Z] TAMPER #29: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:41:06.861Z] Window lost focus (blur)
+[2026-03-19T12:41:06.864Z] TAMPER #30: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:41:06.998Z] TAMPER #31: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:41:42.304Z] Window lost focus (blur)
+[2026-03-19T12:41:42.305Z] TAMPER #32: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:41:42.510Z] TAMPER #33: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:42:17.046Z] Window lost focus (blur)
+[2026-03-19T12:42:17.050Z] TAMPER #34: Window lost focus (editor focused) — tab switch
+[2026-03-19T12:42:18.765Z] TAMPER #35: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:47:59.688Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:47:59.691Z] Window lost focus (blur)
+[2026-03-19T12:49:20.063Z] Window lost focus (blur)
+[2026-03-19T12:49:20.993Z] Window lost focus (blur)
+[2026-03-19T12:49:21.874Z] Window lost focus (blur)
+[2026-03-19T12:49:25.127Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:49:25.128Z] Window lost focus (blur)
+[2026-03-19T12:56:12.058Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:56:12.060Z] Window lost focus (blur)
+[2026-03-19T12:56:27.645Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T12:56:27.647Z] Window lost focus (blur)
+[2026-03-19T13:13:36.907Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:13:36.910Z] Window lost focus (blur)
+[2026-03-19T13:17:44.699Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:17:44.701Z] Window lost focus (blur)
+[2026-03-19T13:18:35.771Z] Window lost focus (blur)
+[2026-03-19T13:18:35.773Z] TAMPER #1: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:18:37.475Z] TAMPER #2: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:19:51.658Z] Window lost focus (blur)
+[2026-03-19T13:19:51.659Z] TAMPER #3: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:19:53.794Z] TAMPER #4: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:20:50.538Z] Window lost focus (blur)
+[2026-03-19T13:20:50.542Z] TAMPER #5: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:20:53.545Z] TAMPER #6: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:21:53.587Z] Window lost focus (blur)
+[2026-03-19T13:21:53.588Z] TAMPER #7: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:21:53.763Z] TAMPER #8: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:21:56.310Z] Window lost focus (blur)
+[2026-03-19T13:21:56.313Z] TAMPER #9: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:21:58.652Z] TAMPER #10: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:23:57.401Z] Window lost focus (blur)
+[2026-03-19T13:23:57.402Z] TAMPER #11: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:23:59.471Z] TAMPER #12: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:25:24.954Z] Window lost focus (blur)
+[2026-03-19T13:25:24.956Z] TAMPER #13: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:25:27.066Z] TAMPER #14: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:26:04.355Z] Window lost focus (blur)
+[2026-03-19T13:26:04.517Z] TAMPER #15: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:26:33.284Z] Window lost focus (blur)
+[2026-03-19T13:26:33.285Z] TAMPER #16: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:26:33.465Z] TAMPER #17: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:30:09.606Z] Window lost focus (blur)
+[2026-03-19T13:30:09.608Z] TAMPER #18: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:30:10.474Z] TAMPER #19: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:30:26.036Z] Window lost focus (blur)
+[2026-03-19T13:30:26.037Z] TAMPER #20: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:30:26.187Z] TAMPER #21: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:30:34.907Z] Window lost focus (blur)
+[2026-03-19T13:30:34.911Z] TAMPER #22: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:30:35.092Z] TAMPER #23: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:30:49.045Z] Window lost focus (blur)
+[2026-03-19T13:30:49.046Z] TAMPER #24: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:30:49.243Z] TAMPER #25: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:31:04.141Z] Window lost focus (blur)
+[2026-03-19T13:31:04.144Z] TAMPER #26: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:31:04.274Z] TAMPER #27: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:31:06.121Z] Window lost focus (blur)
+[2026-03-19T13:31:06.123Z] TAMPER #28: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:31:06.282Z] TAMPER #29: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:31:20.661Z] Window lost focus (blur)
+[2026-03-19T13:31:20.667Z] TAMPER #30: Window lost focus (editor focused) — tab switch
+[2026-03-19T13:31:20.828Z] TAMPER #31: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:38:52.467Z] Window lost focus (blur)
+[2026-03-19T13:39:01.828Z] TAMPER #32: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:39:10.013Z] TAMPER #33: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:39:10.015Z] Window lost focus (blur)
+[2026-03-19T13:40:22.388Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:40:22.390Z] Window lost focus (blur)
+[2026-03-19T13:54:04.686Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-19T13:54:04.688Z] Window lost focus (blur)
+[2026-03-20T05:05:20.075Z] Window lost focus (blur)
+[2026-03-20T05:05:21.393Z] Window lost focus (blur)
+[2026-03-20T05:05:22.029Z] Window lost focus (blur)
+[2026-03-20T05:05:22.843Z] Window lost focus (blur)
+[2026-03-20T05:05:22.860Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:05:23.261Z] Window lost focus (blur)
+[2026-03-20T05:05:23.262Z] TAMPER #2: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:24.013Z] TAMPER #3: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:05:25.221Z] Window lost focus (blur)
+[2026-03-20T05:05:25.221Z] TAMPER #4: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:26.318Z] Window lost focus (blur)
+[2026-03-20T05:05:26.319Z] TAMPER #5: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:26.322Z] TAMPER #6: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:05:27.336Z] Window lost focus (blur)
+[2026-03-20T05:05:28.980Z] Window lost focus (blur)
+[2026-03-20T05:05:29.911Z] Window lost focus (blur)
+[2026-03-20T05:05:29.936Z] TAMPER #7: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:29.940Z] TAMPER #8: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:05:34.040Z] Window lost focus (blur)
+[2026-03-20T05:05:34.042Z] TAMPER #9: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:35.180Z] Window lost focus (blur)
+[2026-03-20T05:05:35.181Z] TAMPER #10: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:36.052Z] Window lost focus (blur)
+[2026-03-20T05:05:36.053Z] TAMPER #11: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:36.794Z] Window lost focus (blur)
+[2026-03-20T05:05:36.796Z] TAMPER #12: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:36.809Z] TAMPER #13: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:05:37.803Z] Window lost focus (blur)
+[2026-03-20T05:05:37.808Z] TAMPER #14: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:37.812Z] TAMPER #15: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:05:40.663Z] Window lost focus (blur)
+[2026-03-20T05:05:40.666Z] TAMPER #16: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:41.943Z] Window lost focus (blur)
+[2026-03-20T05:05:41.946Z] TAMPER #17: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:44.081Z] Window lost focus (blur)
+[2026-03-20T05:05:44.085Z] TAMPER #18: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:50.146Z] Window lost focus (blur)
+[2026-03-20T05:05:56.345Z] Window lost focus (blur)
+[2026-03-20T05:05:56.348Z] TAMPER #19: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:57.105Z] Window lost focus (blur)
+[2026-03-20T05:05:57.106Z] TAMPER #20: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:05:58.471Z] Window lost focus (blur)
+[2026-03-20T05:05:59.303Z] Window lost focus (blur)
+[2026-03-20T05:06:00.609Z] Window lost focus (blur)
+[2026-03-20T05:06:00.610Z] TAMPER #21: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:01.473Z] Window lost focus (blur)
+[2026-03-20T05:06:01.475Z] TAMPER #22: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:02.472Z] Window lost focus (blur)
+[2026-03-20T05:06:08.974Z] Window lost focus (blur)
+[2026-03-20T05:06:08.977Z] TAMPER #23: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:10.140Z] Window lost focus (blur)
+[2026-03-20T05:06:10.141Z] TAMPER #24: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:11.276Z] Window lost focus (blur)
+[2026-03-20T05:06:14.129Z] Window lost focus (blur)
+[2026-03-20T05:06:15.074Z] Window lost focus (blur)
+[2026-03-20T05:06:16.281Z] Window lost focus (blur)
+[2026-03-20T05:06:16.283Z] TAMPER #25: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:17.195Z] Window lost focus (blur)
+[2026-03-20T05:06:17.201Z] TAMPER #26: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:18.799Z] Window lost focus (blur)
+[2026-03-20T05:06:19.685Z] Window lost focus (blur)
+[2026-03-20T05:06:20.692Z] Window lost focus (blur)
+[2026-03-20T05:06:20.695Z] TAMPER #27: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:22.815Z] Window lost focus (blur)
+[2026-03-20T05:06:22.817Z] TAMPER #28: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:28.952Z] Window lost focus (blur)
+[2026-03-20T05:06:28.953Z] TAMPER #29: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:29.902Z] Window lost focus (blur)
+[2026-03-20T05:06:29.903Z] TAMPER #30: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:30.910Z] Window lost focus (blur)
+[2026-03-20T05:06:35.090Z] Window lost focus (blur)
+[2026-03-20T05:06:36.349Z] Window lost focus (blur)
+[2026-03-20T05:06:36.354Z] TAMPER #31: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:37.283Z] Window lost focus (blur)
+[2026-03-20T05:06:37.284Z] TAMPER #32: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:38.368Z] Window lost focus (blur)
+[2026-03-20T05:06:45.884Z] Window lost focus (blur)
+[2026-03-20T05:06:49.055Z] Window lost focus (blur)
+[2026-03-20T05:06:49.056Z] Window lost focus (blur)
+[2026-03-20T05:06:52.576Z] Window lost focus (blur)
+[2026-03-20T05:06:52.579Z] TAMPER #33: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:53.965Z] Window lost focus (blur)
+[2026-03-20T05:06:53.965Z] Window lost focus (blur)
+[2026-03-20T05:06:55.703Z] Window lost focus (blur)
+[2026-03-20T05:06:55.704Z] TAMPER #34: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:06:57.844Z] Window lost focus (blur)
+[2026-03-20T05:06:57.844Z] TAMPER #35: Window lost focus (editor focused) — tab switch
+[2026-03-20T05:07:07.488Z] TAMPER #36: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:07:07.489Z] Window lost focus (blur)
+[2026-03-20T05:18:56.543Z] Window lost focus (blur)
+[2026-03-20T05:18:58.692Z] Window lost focus (blur)
+[2026-03-20T05:18:58.707Z] TAMPER #1: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:18:59.692Z] Window lost focus (blur)
+[2026-03-20T05:19:01.854Z] TAMPER #2: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:04.988Z] TAMPER #3: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:08.409Z] TAMPER #4: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:09.751Z] TAMPER #5: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:11.321Z] Window lost focus (blur)
+[2026-03-20T05:19:12.595Z] Window lost focus (blur)
+[2026-03-20T05:19:12.601Z] TAMPER #6: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:15.272Z] Window lost focus (blur)
+[2026-03-20T05:19:15.275Z] TAMPER #7: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:16.501Z] Window lost focus (blur)
+[2026-03-20T05:19:16.504Z] TAMPER #8: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:18.439Z] Window lost focus (blur)
+[2026-03-20T05:19:18.442Z] TAMPER #9: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:20.884Z] Window lost focus (blur)
+[2026-03-20T05:19:20.889Z] TAMPER #10: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:22.018Z] Window lost focus (blur)
+[2026-03-20T05:19:22.026Z] TAMPER #11: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:23.154Z] Window lost focus (blur)
+[2026-03-20T05:19:27.653Z] TAMPER #12: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:28.703Z] TAMPER #13: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:29.700Z] TAMPER #14: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:33.769Z] TAMPER #15: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:37.648Z] TAMPER #16: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:38.524Z] TAMPER #17: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:39.421Z] TAMPER #18: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:40.289Z] TAMPER #19: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:42.981Z] Window lost focus (blur)
+[2026-03-20T05:19:42.985Z] TAMPER #20: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:44.682Z] Window lost focus (blur)
+[2026-03-20T05:19:45.783Z] Window lost focus (blur)
+[2026-03-20T05:19:45.790Z] TAMPER #21: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:19:46.698Z] Window lost focus (blur)
+[2026-03-20T05:19:46.702Z] TAMPER #22: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:21:38.316Z] TAMPER #23: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:22:51.746Z] Window lost focus (blur)
+[2026-03-20T05:22:53.935Z] TAMPER #24: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:22:54.729Z] TAMPER #25: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:22:56.517Z] Window lost focus (blur)
+[2026-03-20T05:22:57.626Z] Window lost focus (blur)
+[2026-03-20T05:22:57.633Z] TAMPER #26: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:22:59.043Z] Window lost focus (blur)
+[2026-03-20T05:22:59.051Z] TAMPER #27: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:00.229Z] Window lost focus (blur)
+[2026-03-20T05:23:00.237Z] TAMPER #28: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:01.564Z] Window lost focus (blur)
+[2026-03-20T05:23:01.569Z] TAMPER #29: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:02.440Z] Window lost focus (blur)
+[2026-03-20T05:23:06.528Z] TAMPER #30: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:23:06.529Z] Window lost focus (blur)
+[2026-03-20T05:23:35.743Z] Window lost focus (blur)
+[2026-03-20T05:23:35.749Z] TAMPER #1: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:36.539Z] Window lost focus (blur)
+[2026-03-20T05:23:36.868Z] TAMPER #2: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:38.049Z] TAMPER #3: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:39.423Z] Window lost focus (blur)
+[2026-03-20T05:23:39.429Z] TAMPER #4: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:40.642Z] Window lost focus (blur)
+[2026-03-20T05:23:40.646Z] TAMPER #5: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:41.880Z] Window lost focus (blur)
+[2026-03-20T05:23:41.887Z] TAMPER #6: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:43.601Z] Window lost focus (blur)
+[2026-03-20T05:23:43.608Z] TAMPER #7: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:45.056Z] Window lost focus (blur)
+[2026-03-20T05:23:45.085Z] TAMPER #8: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:23:45.471Z] TAMPER #9: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:45.711Z] Window lost focus (blur)
+[2026-03-20T05:23:45.718Z] TAMPER #10: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:23:46.558Z] TAMPER #11: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:23:47.538Z] TAMPER #12: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:23:52.365Z] Window lost focus (blur)
+[2026-03-20T05:23:52.376Z] TAMPER #13: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:53.765Z] Window lost focus (blur)
+[2026-03-20T05:23:53.769Z] TAMPER #14: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:23:55.598Z] Window lost focus (blur)
+[2026-03-20T05:23:55.606Z] TAMPER #15: Window lost focus — tab switch / minimise / Win+D
+[2026-03-20T05:24:00.448Z] TAMPER #16: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:24:00.449Z] Window lost focus (blur)
+[2026-03-20T05:33:56.268Z] TAMPER #1: Window hidden — tab switch / minimise / Win+D
+[2026-03-20T05:33:56.269Z] Window lost focus (blur)

@@ -1,0 +1,86 @@
+{
+  "name": "exam-time",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.8.1",
+    "monaco-editor": "^0.52.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "pdfkit": "^0.18.0"
+  },
+  "build": {
+    "appId": "com.examkiosk.app",
+    "productName": "Exam_Time",
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0be4ba37ffe74779991d4070d5fcc090a79f1958
+    "files": [
+      "main.js",
+      "index.html",
+      "node_modules/**",
+      "generate-submission-pdf.js"
+    ],
+    "extraResources": [
+      {
+        "from": "node_modules/monaco-editor",
+        "to": "monaco-editor"
+      }
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "node_modules/monaco-editor/**",
+      "node_modules/better-sqlite3/**"
+    ],
+    "nativeRebuilder": "legacy",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "installerHeaderIcon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.education"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets/icon.png",
+      "category": "Education"
+    }
+  }
+}
