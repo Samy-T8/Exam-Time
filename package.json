@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "better-sqlite3": "^12.8.0",
+    "electron-updater": "^6.8.3",
     "pdfkit": "^0.18.0"
   },
   "build": {
@@ -79,6 +80,13 @@
       ],
       "icon": "assets/icon.png",
       "category": "Education"
-    }
+    },
+    "publish":[
+      {
+      "provider" : "github",
+      "owner" : "Samy-T8",
+      "repo": "Exam_Time"
+      }
+    ]
   }
 }

@@ -2,11 +2,48 @@ const { app, BrowserWindow, Menu, ipcMain, globalShortcut, shell } = require("el
 const path = require("path");
 const fs   = require("fs");
 const { generateSubmissionPdf } = require("./generate-submission-pdf");
+const { autoUpdater } = require("electron-updater");
 
 // Paths: appRoot for reading bundled files (Monaco etc); userData for writable (Exam, .run, log, exam_env)
 // In packaged app, __dirname is inside asar (read-only) — writable data MUST use userData
 let sessionDir = null;
 let sessionId = null;
+
+// app updater
+autoUpdater.autoDownload = false;
+
+app.whenReady().then(() => {
+  autoUpdater.checkForUpdates();
+});
+
+autoUpdater.on("update-available", () => {
+  dialog.showMessageBox({
+    type: "info",
+    title: "Update Available",
+    message: "A new version is available. Do you want to update?",
+    buttons: ["Yes", "No"]
+  }).then(result => {
+    if (result.response === 0) {
+      autoUpdater.downloadUpdate();
+    }
+  });
+});
+
+autoUpdater.on("download-progress", (progress) => {
+  console.log(`Downloading: ${progress.percent}%`);
+});
+
+autoUpdater.on("update-downloaded", () => {
+  dialog.showMessageBox({
+    title: "Update Ready",
+    message: "Update downloaded. Restart now?",
+    buttons: ["Restart", "Later"]
+  }).then(result => {
+    if (result.response === 0) {
+      autoUpdater.quitAndInstall();
+    }
+  });
+});
 
 function cleanupOldSessions(userDataPath) {
   try {
