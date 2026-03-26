@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu, ipcMain, globalShortcut, shell } = require("electron");
+const { app, BrowserWindow, Menu, ipcMain, globalShortcut, shell, dialog } = require("electron");
 const path = require("path");
 const fs   = require("fs");
 const { generateSubmissionPdf } = require("./generate-submission-pdf");
@@ -14,6 +14,22 @@ autoUpdater.autoDownload = false;
 
 app.whenReady().then(() => {
   autoUpdater.checkForUpdates();
+});
+
+autoUpdater.on('checking-for-update', () => {
+  console.log('Checking for update...');
+});
+
+autoUpdater.on('update-available', () => {
+  console.log('Update available!');
+});
+
+autoUpdater.on('update-not-available', () => {
+  console.log('No update available');
+});
+
+autoUpdater.on('error', (err) => {
+  console.log('Error:', err);
 });
 
 autoUpdater.on("update-available", () => {
