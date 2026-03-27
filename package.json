@@ -63,8 +63,7 @@
       "createStartMenuShortcut": true,
       "installerIcon": "build/icons/icon.ico",
       "uninstallerIcon": "build/icons/icon.ico",
-      "installerHeaderIcon": "build/icons/icon.ico",
-      "include": "build/installer.nsh"
+      "installerHeaderIcon": "build/icons/icon.ico"
     },
     "mac": {
       "target": [
