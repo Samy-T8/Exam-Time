@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "private": true,
   "main": "main.js",
+  "author" : "Samarth Agarwal",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
@@ -23,8 +24,8 @@
   },
   "build": {
     "artifactName": "${productName}-Setup-${version}.${ext}",
-    "appId": "com.examkiosk.app",
-    "productName": "Exam_Time",
+    "appId": "com.samarth.examtime",
+    "productName": "Exam Time",
     "files": [
       "main.js",
       "index.html",
@@ -46,6 +47,7 @@
     ],
     "nativeRebuilder": "legacy",
     "win": {
+      "legalTrademarks": "SA ki company",
       "icon" : "build/icons/icon.ico",
       "target": [
         {
