@@ -77,11 +77,10 @@
       TOP BAR — floating glass strip
    ══════════════════════════════════════════ */
    .top {
-     display: flex;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
      align-items: center;
-     justify-content: space-between;
      gap: 12px;
-     flex-wrap: wrap;
      padding: 8px 16px;
      border-radius: 16px;
      background: linear-gradient(135deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 100%);
@@ -93,6 +92,16 @@
        inset 0 1px 0 rgba(255,255,255,0.20),
        inset 0 -1px 0 rgba(0,0,0,0.15),
        var(--shadow-md);
+   }
+
+   /* Centre zone — Evaluate button stretches full width */
+   .titlebar-centre {
+     display: flex;
+     justify-content: center;
+   }
+
+   .titlebar-centre #evaluateBtn {
+     width: 100%;
    }
    
    .titlebar-left {
@@ -578,6 +587,7 @@
    .controls {
      display: flex;
      align-items: center;
+     justify-content: flex-end;
      gap: 9px;
    }
    
@@ -1154,7 +1164,9 @@
      position: relative;
      top: -1px;
    }
-   
+   #logo{
+    margin-top : 5px;
+  }
    .editor-resize-handle::after {
      content: '';
      width: 32px;

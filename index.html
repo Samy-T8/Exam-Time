@@ -103,16 +103,19 @@
 
     <div class="wrap">
       <div class="top">
-        <!-- Left: title + stopwatch + evaluate -->
+        <!-- Left: logo + stopwatch + Upload PDF -->
         <div class="titlebar-left">
-          <h1>📄 Exam Time</h1>
+          <img src="logo.png" alt="Exam Time" height="25" id="logo">
           <span id="stopwatch">00:00:00</span>
+          <input id="pdfInput" type="file" accept="application/pdf" hidden />
+          <button id="uploadBtn" class="btn" type="button">Upload PDF</button>
+        </div>
+        <!-- Centre: Evaluate button -->
+        <div class="titlebar-centre">
           <button id="evaluateBtn" type="button">Evaluate</button>
         </div>
         <!-- Right: controls + close -->
         <div class="controls">
-          <input id="pdfInput" type="file" accept="application/pdf" hidden />
-          <button id="uploadBtn" class="btn" type="button">Upload PDF</button>
           <input id="inputFile" type="file" accept=".csv,.txt" hidden />
           <button id="uploadInputBtn" class="btn" type="button">Upload File</button>
           <select id="langSelect" aria-label="Language">

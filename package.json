@@ -27,6 +27,7 @@
     "appId": "com.samarth.examtime",
     "productName": "ExamTime",
     "files": [
+      "logo.png",
       "main.js",
       "index.html",
       "node_modules/**",
