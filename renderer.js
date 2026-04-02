@@ -219,7 +219,7 @@
     let inputFiles = [];
     try {
       inputFiles = fs.readdirSync(inputDir)
-        .filter(f => /^input_\d+\.(csv|txt)$/i.test(f))
+      .filter(f => /\.(csv|txt)$/i.test(f))
         .sort((a, b) => {
           const na = Number((/^input_(\d+)/i.exec(a) || [])[1] || 0);
           const nb = Number((/^input_(\d+)/i.exec(b) || [])[1] || 0);
@@ -238,7 +238,7 @@
 
     // Uploaded inputs are read-only (no deletion/editing). Show them but disable click.
     const inputButtons = inputFiles.map(f =>
-      `<button class="fileItem" type="button" data-file="${encodeURIComponent(f)}" data-kind="input" disabled>${f}</button>`
+      `<button class="fileItem" type="button" data-file="${encodeURIComponent(f)}" data-kind="input" disabled>inputs/${f}</button>`
     );
 
     fileListEl.innerHTML = [...solutionButtons, ...inputButtons].join("");
@@ -320,7 +320,7 @@
     try {
       const indices = new Set(
         fs.readdirSync(inputDir)
-          .filter(f => /^input_\d+\.(csv|txt)$/i.test(f))
+          .filter(f => /\.(csv|txt)$/i.test(f))
           .map(f => {
             const m = /^input_(\d+)\.(csv|txt)$/i.exec(f);
             return m ? m[1] : null;
@@ -338,31 +338,36 @@
     }
 
     // Find first available index 1..MAX_INPUT_FILES that doesn't already exist.
-    let targetIndex = null;
-    for (let i = 1; i <= MAX_INPUT_FILES; i++) {
-      const candidateCsv = path.join(inputDir, `input_${i}.csv`);
-      const candidateTxt = path.join(inputDir, `input_${i}.txt`);
-      if (!fs.existsSync(candidateCsv) && !fs.existsSync(candidateTxt)) {
-        targetIndex = i;
-        break;
-      }
-    }
-    if (targetIndex === null) {
+    const existingFiles = fs.readdirSync(inputDir)
+      .filter(f => /\.(csv|txt)$/i.test(f));
+
+    if (existingFiles.length >= MAX_INPUT_FILES) {
       alert("Maximum of 3 input files per session.");
       inputFileEl.value = "";
       return;
     }
 
-    const destPath = path.join(inputDir, `input_${targetIndex}${ext}`);
+    // prevent duplicate overwrite
+    let fileName = file.name;
+    let base = path.parse(fileName).name;
+    let extension = path.extname(fileName);
+
+    let counter = 1;
+    while (fs.existsSync(path.join(inputDir, fileName))) {
+      fileName = `${base}(${counter})${extension}`;
+      counter++;
+    }
+
+    const destPath = path.join(inputDir, fileName);
     try {
       // Do not rely on `file.path` (not always available in renderer).
       // Write bytes directly from the File API.
       const ab = await file.arrayBuffer();
       fs.writeFileSync(destPath, Buffer.from(ab));
       inputUploadCount++;
-      console.log("[UPLOAD]", `input_${targetIndex}${ext}`, "(original:", file.name + ")");
+      console.log("[UPLOAD]", fileName);
       if (typeof logEvent === "function") {
-        logEvent(`[UPLOAD] input_${targetIndex}${ext} (original: ${file.name})`);
+        logEvent(`[UPLOAD] ${fileName} (original: ${file.name})`);
       }
     } catch (e) {
       console.error("Failed to save uploaded input file:", e);
@@ -1579,7 +1584,8 @@
       const inputDir = path.join(userDataPath, "inputs");
       if (fs.existsSync(inputDir)) {
         fs.readdirSync(inputDir)
-          .filter(f => /^input_\d+\.(csv|txt)$/i.test(f)).sort()
+          .filter(f => /\.(csv|txt)$/i.test(f))
+          .sort((a, b) => a.localeCompare(b))
           .forEach(f => {
             let size = "";
             try {
@@ -1841,3 +1847,18 @@
   // ────────────────────────────────────────────────────────────────────────
 
   })();
+
+const pdfInput = document.getElementById("pdfInput");
+const pdfFrame = document.getElementById("pdfFrame");
+const placeholder = document.getElementById("pdfPlaceholder");
+
+pdfInput.addEventListener("change", () => {
+  const file = pdfInput.files[0];
+  if (!file) return;
+
+  const url = URL.createObjectURL(file);
+  pdfFrame.src = url;
+
+  // Hide placeholder
+  placeholder.classList.add("hidden");
+});

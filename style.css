@@ -220,6 +220,7 @@
    
    /* Hint / status text */
    .hint {
+      display: none;
      opacity: 0.60;
      font-size: 12px;
      font-weight: 400;
@@ -1247,3 +1248,60 @@
      }
      .divider-col { display: none; }
    }
+
+   /* ───────── PDF Placeholder ───────── */
+
+#pdfPlaceholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  
+  z-index: 2;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.placeholder-content {
+  text-align: center;
+  padding: 30px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.upload-icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+.placeholder-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.placeholder-sub {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+/* Hidden state */
+#pdfPlaceholder.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.96);
+}
+
+/* Make viewer relative for overlay */
+.viewer {
+  position: relative;
+}
