@@ -39,6 +39,10 @@
       {
         "from": "node_modules/monaco-editor",
         "to": "monaco-editor"
+      },
+      {
+        "from" : "compiler/",
+        "to" : "compiler/"
       }
     ],
     "asar": true,

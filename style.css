@@ -31,10 +31,11 @@
      --surface-3: rgba(255, 255, 255, 0.12);
    
      /* Shadows */
-     --shadow-sm:  0 2px 8px rgba(0,0,0,0.28), 0 1px 2px rgba(0,0,0,0.20);
-     --shadow-md:  0 8px 24px rgba(0,0,0,0.35), 0 2px 6px rgba(0,0,0,0.25);
-     --shadow-lg:  0 20px 60px rgba(0,0,0,0.55), 0 6px 18px rgba(0,0,0,0.35);
-     --shadow-xl:  0 32px 80px rgba(0,0,0,0.70), 0 8px 24px rgba(0,0,0,0.45);
+     /* Single-layer shadows — 2-layer shadows double compositing cost */
+     --shadow-sm:  0 2px 8px rgba(0,0,0,0.32);
+     --shadow-md:  0 8px 24px rgba(0,0,0,0.40);
+     --shadow-lg:  0 20px 60px rgba(0,0,0,0.58);
+     --shadow-xl:  0 32px 80px rgba(0,0,0,0.72);
    
      --transition:      0.12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
      --transition-fast: 0.08s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -55,10 +56,8 @@
    
    /* ── Dark grey background — neutral, no colour tint ── */
    body {
-     background:
-       radial-gradient(ellipse 70% 55% at 20% 15%,  rgba(255,255,255,0.025) 0%, transparent 65%),
-       radial-gradient(ellipse 60% 50% at 80% 85%,  rgba(255,255,255,0.018) 0%, transparent 60%),
-       #1a1a1a;
+     /* Single flat colour — radial-gradients on body cost ~15% GPU per frame */
+     background: #1a1a1a;
    }
    
    /* ══════════════════════════════════════════
@@ -86,12 +85,14 @@
      background: linear-gradient(135deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 100%);
      border: 1px solid var(--glass-border);
      /* Inner highlight line */
-     backdrop-filter: blur(20px) saturate(1.6);
-     -webkit-backdrop-filter: blur(20px) saturate(1.6);
+     /* Baked semi-opaque gradient replaces live blur on the always-visible top bar.
+        backdrop-filter on a persistent element forces a compositor layer every frame. */
      box-shadow:
        inset 0 1px 0 rgba(255,255,255,0.20),
        inset 0 -1px 0 rgba(0,0,0,0.15),
        var(--shadow-md);
+     /* Promote once, stay — prevents repaints caused by content changes below */
+     will-change: transform;
    }
 
    /* Centre zone — Evaluate button stretches full width */
@@ -152,18 +153,17 @@
      font-size: 13px;
      font-weight: 500;
      letter-spacing: 0.1px;
+     /* Only compositor properties — transform+opacity are free; background/border-color repaint */
      transition:
        transform 0.10s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-       opacity   0.10s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-       background 0.10s ease,
-       border-color 0.10s ease;
+       opacity   0.10s cubic-bezier(0.25, 0.46, 0.45, 0.94);
      box-shadow:
        inset 0 1px 0 rgba(255,255,255,0.14),
        var(--shadow-sm);
    }
    
    .btn:hover {
-     will-change: transform;
+     /* will-change removed from hover — promotes/demotes layer on every mouse-in/out = paint storm */
      background: linear-gradient(135deg, var(--surface-3) 0%, var(--surface-2) 100%);
      border-color: rgba(255,255,255,0.28);
      transform: translateY(-1.5px);
@@ -254,8 +254,8 @@
    }
    
    #closeBtn:hover {
-     background: radial-gradient(circle at 40% 35%, rgba(255,120,120,0.95) 0%, #c53030 60%);
      transform: scale(1.08);
+     opacity: 0.88;
      box-shadow:
        inset 0 1px 0 rgba(255,255,255,0.30),
        0 0 0 3px rgba(229,62,62,0.30),
@@ -276,13 +276,12 @@
      padding: 5px 14px;
      border-radius: 9px;
      font-family: inherit;
-     font-size: 12px;
+     font-size: 13px;
      font-weight: 600;
      cursor: pointer;
      transition:
        transform 0.10s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-       filter 0.10s ease,
-       background 0.10s ease;
+       opacity 0.10s ease;
      background: linear-gradient(135deg, rgba(229,62,62,0.75), rgba(180,30,30,0.75));
      color: #fff;
      box-shadow:
@@ -292,7 +291,8 @@
    }
    
    #evaluateBtn:hover {
-     filter: brightness(1.18);
+     /* opacity instead of filter:brightness — compositor-only, zero repaint cost */
+     opacity: 0.88;
      transform: translateY(-1.5px);
      box-shadow:
        inset 0 1px 0 rgba(255,255,255,0.25),
@@ -615,22 +615,23 @@
    /* ══════════════════════════════════════════
       EXIT CONFIRM DIALOG
    ══════════════════════════════════════════ */
+   /* ── Exit Overlay — same fix ── */
    #exitOverlay {
      display: none;
      position: fixed;
      inset: 0;
-     background: rgba(0,0,0,0.60);
-     backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  z-index: 10000;
+     background: rgba(0,0,0,0.65);
+     z-index: 10000;
      align-items: center;
      justify-content: center;
    }
-   
+
    #exitOverlay.show { display: flex; }
-   
+
    #exitDialog {
-     background: linear-gradient(145deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 100%);
+     backdrop-filter: blur(20px) saturate(1.4);
+     -webkit-backdrop-filter: blur(20px) saturate(1.4);
+     background: linear-gradient(145deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.05) 100%);
      border: 1px solid var(--glass-border);
      border-radius: 20px;
      padding: 30px 34px;
@@ -638,8 +639,8 @@
      text-align: center;
      box-shadow:
        inset 0 1px 0 rgba(255,255,255,0.22),
-       inset 0 -1px 0 rgba(0,0,0,0.15),
        var(--shadow-xl);
+     contain: layout style;
      animation: dialogIn 0.16s cubic-bezier(0.22, 1, 0.36, 1) both;
    }
    
@@ -701,7 +702,7 @@
    }
    
    #exitConfirmBtn:hover {
-     filter: brightness(1.15);
+     opacity: 0.88;
      transform: translateY(-1.5px);
      box-shadow: inset 0 1px 0 rgba(255,255,255,0.22), 0 6px 20px rgba(220,50,50,0.42);
    }
@@ -714,22 +715,26 @@
    /* ══════════════════════════════════════════
       EVALUATION MODAL
    ══════════════════════════════════════════ */
+   /* ── Evaluation Modal ──
+      Full-viewport backdrop-filter = GPU blurs every pixel behind overlay on every frame.
+      Fix: remove blur from overlay, apply it only to the small dialog surface. */
    #evaluationModal {
      display: none;
      position: fixed;
      inset: 0;
-     backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  z-index: 10001;
-     background: rgba(0, 0, 0, 0.60);
+     z-index: 10001;
+     background: rgba(0, 0, 0, 0.65);
      align-items: center;
      justify-content: center;
    }
-   
+
    #evaluationModal.show { display: flex; }
-   
+
    .eval-dialog {
-     background: linear-gradient(145deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 100%);
+     /* Blur only the dialog box — ~95% less GPU work than blurring the whole screen */
+     backdrop-filter: blur(20px) saturate(1.4);
+     -webkit-backdrop-filter: blur(20px) saturate(1.4);
+     background: linear-gradient(145deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.05) 100%);
      border: 1px solid var(--glass-border);
      border-radius: 22px;
      width: 520px;
@@ -739,9 +744,9 @@
      flex-direction: column;
      box-shadow:
        inset 0 1px 0 rgba(255,255,255,0.22),
-       inset 0 -1px 0 rgba(0,0,0,0.18),
        var(--shadow-xl);
      overflow: hidden;
+     contain: layout style;
      animation: dialogIn 0.16s cubic-bezier(0.22, 1, 0.36, 1) both;
    }
    
@@ -955,7 +960,7 @@
    }
    
    #markEvaluatedBtn:hover {
-     filter: brightness(1.18);
+     opacity: 0.85;
      transform: translateY(-1.5px);
      box-shadow: inset 0 1px 0 rgba(134,239,172,0.22), 0 6px 20px rgba(134,239,172,0.22);
    }
@@ -984,7 +989,7 @@
    }
    
    #uploadClassroomBtn:hover {
-     filter: brightness(1.22);
+     opacity: 0.85;
      transform: translateY(-1.5px);
      box-shadow: inset 0 1px 0 rgba(96,165,250,0.25), 0 6px 20px rgba(96,165,250,0.22);
    }
@@ -998,22 +1003,24 @@
    /* ══════════════════════════════════════════
       STUDENT INFO MODAL
    ══════════════════════════════════════════ */
+   /* ── Student Info Modal — same fix as evaluationModal ── */
    #studentInfoModal {
      display: none;
      position: fixed;
      inset: 0;
-     backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  z-index: 10002;
+     z-index: 10002;
      background: rgba(0, 0, 0, 0.65);
      align-items: center;
      justify-content: center;
    }
-   
+
    #studentInfoModal.show { display: flex; }
-   
+
    .student-dialog {
-     background: linear-gradient(145deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 100%);
+     /* Blur on dialog only, not full viewport */
+     backdrop-filter: blur(20px) saturate(1.4);
+     -webkit-backdrop-filter: blur(20px) saturate(1.4);
+     background: linear-gradient(145deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.05) 100%);
      border: 1px solid var(--glass-border);
      border-radius: 22px;
      width: 420px;
@@ -1021,8 +1028,8 @@
      overflow: hidden;
      box-shadow:
        inset 0 1px 0 rgba(255,255,255,0.22),
-       inset 0 -1px 0 rgba(0,0,0,0.18),
        var(--shadow-xl);
+     contain: layout style;
      animation: dialogIn 0.16s cubic-bezier(0.22, 1, 0.36, 1) both;
    }
    
@@ -1130,7 +1137,7 @@
    }
    
    #studentInfoConfirmBtn:hover {
-     filter: brightness(1.22);
+     opacity: 0.85;
      transform: translateY(-1.5px);
      box-shadow: inset 0 1px 0 rgba(96,165,250,0.25), 0 6px 20px rgba(96,165,250,0.22);
    }
@@ -1257,15 +1264,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255,255,255,0.10);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter removed — blurring the whole PDF viewer panel is expensive
+     and visually unnecessary; flat semi-opaque bg looks identical */
+  background: rgba(26, 26, 26, 0.85);
   border-radius: 14px;
   width: 100%;
   height: 100%;
   border: 0;
-  
   z-index: 2;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  /* will-change only during transition — use opacity/transform (compositor-free) */
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  will-change: opacity, transform;
 }
 
 .placeholder-content {

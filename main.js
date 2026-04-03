@@ -9,6 +9,26 @@ const { autoUpdater } = require("electron-updater");
 let sessionDir = null;
 let sessionId = null;
 
+// ── Bundled MinGW compiler paths ──────────────────────────────────────────────
+// Dev:        <project-root>/compiler/mingw/bin/
+// Packaged:   <install>/resources/compiler/mingw/bin/   (via extraResources)
+function getMingwBin() {
+  const base = app.isPackaged ? process.resourcesPath : __dirname;
+  return path.join(base, "compiler", "mingw", "bin");
+}
+function getGppPath() { return path.join(getMingwBin(), "g++.exe"); }
+function getGccPath() { return path.join(getMingwBin(), "gcc.exe"); }
+
+// Inject MinGW bin into PATH so:
+//   1. The compiler itself can find its own tools (cc1plus, as, ld...)
+//   2. The compiled .exe can find runtime DLLs (libstdc++-6.dll etc.)
+function mingwEnv() {
+  const mingwBin = getMingwBin();
+  const systemPath = process.env.PATH || process.env.Path || "";
+  return { ...process.env, PATH: mingwBin + path.delimiter + systemPath };
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
 // app updater
 autoUpdater.autoDownload = false;
 
@@ -96,16 +116,57 @@ ipcMain.handle("get-app-paths", () => ({
   sessionDir: ensureSessionDir(),
 }));
 
-// ── IPC: generate-submission-pdf ─────────────────────────────────────────────
-// Renderer sends: { examDir: <absolute path to Exam folder> }
-// Main responds:  { success, pdfPath? } | { success: false, error }
-// All heavy work (fs reads, PDFKit) runs here in the main process.
+// ── IPC: get-mingw-bin ───────────────────────────────────────────────────────
+// Renderer needs this to inject MinGW bin into PATH when spawning compiled exe,
+// so runtime DLLs (libstdc++-6.dll, libgcc_s_seh-1.dll, winpthread-1.dll) resolve.
 // ─────────────────────────────────────────────────────────────────────────────
+ipcMain.handle("get-mingw-bin", () => getMingwBin());
+
+// ── IPC: compile-cpp ─────────────────────────────────────────────────────────
+// Renderer sends: { runDir, srcFile, exeFile }   (srcFile/exeFile = bare names)
+// Main responds:  { stdout, stderr, err }
+// ─────────────────────────────────────────────────────────────────────────────
+ipcMain.handle("compile-cpp", (_event, { runDir, srcFile, exeFile }) => {
+  return new Promise(resolve => {
+    const gpp = getGppPath();
+    if (!fs.existsSync(gpp)) {
+      return resolve({ err: `Compiler not found at: ${gpp}`, stdout: "", stderr: "" });
+    }
+    require("child_process").exec(
+      `"${gpp}" "${srcFile}" -o "${exeFile}" -pthread`,
+      { cwd: runDir, windowsHide: true, timeout: 30000, env: mingwEnv() },
+      (err, stdout, stderr) => resolve({
+        err: err ? err.message : null,
+        stdout: stdout || "",
+        stderr: stderr || "",
+      })
+    );
+  });
+});
+
+// ── IPC: compile-c ───────────────────────────────────────────────────────────
+ipcMain.handle("compile-c", (_event, { runDir, srcFile, exeFile }) => {
+  return new Promise(resolve => {
+    const gcc = getGccPath();
+    if (!fs.existsSync(gcc)) {
+      return resolve({ err: `Compiler not found at: ${gcc}`, stdout: "", stderr: "" });
+    }
+    require("child_process").exec(
+      `"${gcc}" "${srcFile}" -o "${exeFile}"`,
+      { cwd: runDir, windowsHide: true, timeout: 30000, env: mingwEnv() },
+      (err, stdout, stderr) => resolve({
+        err: err ? err.message : null,
+        stdout: stdout || "",
+        stderr: stderr || "",
+      })
+    );
+  });
+});
+
+// ── IPC: generate-submission-pdf ─────────────────────────────────────────────
 ipcMain.handle("generate-submission-pdf", async (_event, { examDir, studentName, enrollNo, pdfFilename }) => {
   try {
     const result = await generateSubmissionPdf({ examDir, app, studentName, enrollNo, pdfFilename });
-    // If PDF was saved successfully, open Google Classroom now.
-    // Doing it here keeps the renderer handler simple.
     if (result.success) {
       shell.openExternal("https://classroom.google.com/");
     }
@@ -136,66 +197,35 @@ function createWindow() {
   win.setMenuBarVisibility(false);
   win.setKiosk(true);
 
-  // ── Block at main-process level (before-input-event) ──────────────────────
   win.webContents.on("before-input-event", (event, input) => {
     const key = (input.key || "").toLowerCase();
     const ctrl = input.control || input.meta;
     const alt  = input.alt;
     const shift = input.shift;
 
-    // Alt+F4
     if (alt && key === "f4")          { event.preventDefault(); return; }
-    // Alt+Tab / Alt+Shift+Tab
     if (alt && key === "tab")         { event.preventDefault(); return; }
-    // Ctrl+W, Ctrl+Tab, Ctrl+Shift+Tab
     if (ctrl && key === "w")          { event.preventDefault(); return; }
     if (ctrl && key === "tab")        { event.preventDefault(); return; }
-    // Ctrl+Esc (Start menu)
     if (ctrl && key === "escape")     { event.preventDefault(); return; }
-    // Ctrl+Alt+Del — partially catchable
     if (ctrl && alt && key === "delete") { event.preventDefault(); return; }
-    // F5 reload, Ctrl+R
     if (key === "f5")                 { event.preventDefault(); return; }
     if (ctrl && key === "r")          { event.preventDefault(); return; }
-    // Ctrl+T, Ctrl+N (new tab/window)
     if (ctrl && key === "t")          { event.preventDefault(); return; }
     if (ctrl && key === "n")          { event.preventDefault(); return; }
-    // PrintScreen
     if (key === "printscreen")        { event.preventDefault(); return; }
-    // Super/Meta/Windows key
     if (key === "meta" || key === "super" || key === "os") {
       event.preventDefault(); return;
     }
   });
 
-  // ── Block at OS level via globalShortcut ──────────────────────────────────
-  // These fire even when the window is focused and catch what before-input-event misses
   const blocked = [
-    "Alt+F4",
-    "Alt+Tab",
-    "Alt+Shift+Tab",
-    "Super+D",          // Win+D  show desktop
-    "Super+E",          // Win+E  file explorer
-    "Super+R",          // Win+R  run dialog
-    "Super+L",          // Win+L  lock screen
-    "Super+Tab",        // Win+Tab task view
-    "Super+M",          // Win+M  minimise all
-    "Super+Up",
-    "Super+Down",
-    "Super+Left",
-    "Super+Right",
-    "Ctrl+Escape",      // Start menu
-    "Ctrl+Alt+Delete",
-    "Ctrl+Shift+Escape",// Task manager
-    "Ctrl+Tab",
-    "Ctrl+Shift+Tab",
-    "Ctrl+W",
-    "Ctrl+T",
-    "Ctrl+N",
-    "Ctrl+R",
-    "F5",
-    "PrintScreen",
-    "Alt+PrintScreen",
+    "Alt+F4", "Alt+Tab", "Alt+Shift+Tab",
+    "Super+D", "Super+E", "Super+R", "Super+L", "Super+Tab", "Super+M",
+    "Super+Up", "Super+Down", "Super+Left", "Super+Right",
+    "Ctrl+Escape", "Ctrl+Alt+Delete", "Ctrl+Shift+Escape",
+    "Ctrl+Tab", "Ctrl+Shift+Tab", "Ctrl+W", "Ctrl+T", "Ctrl+N", "Ctrl+R",
+    "F5", "PrintScreen", "Alt+PrintScreen",
   ];
 
   app.on("browser-window-focus", () => {
@@ -211,12 +241,10 @@ function createWindow() {
     }
   });
 
-  // Register immediately on launch too
   blocked.forEach(sc => {
     try { globalShortcut.register(sc, () => {}); } catch (_) {}
   });
 
-  // ── Prevent window close unless red X clicked ─────────────────────────────
   win.on("close", (e) => {
     if (!allowQuit) e.preventDefault();
   });
@@ -225,10 +253,9 @@ function createWindow() {
     allowQuit = true;
     globalShortcut.unregisterAll();
 
-    // Read session.json — delete user data only if status is "evaluated"
     const userDataPath = app.getPath("userData");
     const sessionFile  = path.join(userDataPath, "session.json");
-    let status = "running"; // safe default — do NOT delete if file missing
+    let status = "running";
     try {
       if (fs.existsSync(sessionFile)) {
         const parsed = JSON.parse(fs.readFileSync(sessionFile, "utf8"));
@@ -242,7 +269,6 @@ function createWindow() {
       try { fs.rmSync(path.join(userDataPath, "tamper.json"), { force: true });                  } catch {}
       try { fs.rmSync(sessionFile,                            { force: true });                  } catch {}
     }
-    // status === "running" → files persist, nothing deleted
 
     cleanupSessionDir();
     app.quit();
@@ -258,9 +284,7 @@ function createWindow() {
   });
 }
 
-  app.whenReady().then(() => {
-  // Crash-safety cleanup: remove leftover temp sessions
-  // (these can exist after a crash or forced close).
+app.whenReady().then(() => {
   cleanupOldSessions(app.getPath("userData"));
   ensureSessionDir();
   createWindow();
@@ -273,6 +297,4 @@ app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit();
 });
 
-// Extra safety: if the app quits without going through `app-quit`,
-// still remove the session directory.
 app.on("before-quit", () => cleanupSessionDir());

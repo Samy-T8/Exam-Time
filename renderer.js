@@ -5,6 +5,11 @@
   const path = nodeRequire("path");
   const { ipcRenderer } = nodeRequire("electron");
   const { appRoot, userDataPath, sessionDir } = await ipcRenderer.invoke("get-app-paths");
+  const mingwBin = await ipcRenderer.invoke("get-mingw-bin");
+  function mingwSpawnEnv() {
+    const systemPath = process.env.PATH || process.env.Path || "";
+    return { ...process.env, PATH: mingwBin + path.delimiter + systemPath };
+  }
 
   // ── session.json init ──
   try {
@@ -50,9 +55,11 @@
       currentPdfName = meta.name || "exam.pdf";
       frame.src = currentPdfUrl;
       setPdfStatus(currentPdfName);
-      // Hide upload controls — PDF already loaded
+      // Hide upload controls and placeholder — PDF already loaded
       uploadBtn.style.display = "none";
       input.style.display     = "none";
+      const _ph = document.getElementById("pdfPlaceholder");
+      if (_ph) _ph.classList.add("hidden");
       swStart();
       return true;
     } catch (e) {
@@ -388,14 +395,25 @@
       return;
     }
 
-    // Persist PDF to disk so it survives app restarts
-    try {
-      fs.mkdirSync(pdfDir, { recursive: true });
-      const ab = await file.arrayBuffer();
-      fs.writeFileSync(pdfSavePath, Buffer.from(ab));
-      fs.writeFileSync(pdfMetaPath, JSON.stringify({ name: file.name }), "utf8");
-    } catch (e) {
-      console.error("Failed to save PDF:", e);
+    // Persist PDF to disk only when session is still running.
+    // After evaluation the upload button is re-shown for examiner preview —
+    // do NOT save to disk so the file never leaks into the next session.
+    const _evaluated = (() => {
+      try {
+        const sf = path.join(userDataPath, "session.json");
+        const s  = fs.existsSync(sf) ? JSON.parse(fs.readFileSync(sf, "utf8")) : {};
+        return s && s.status === "evaluated";
+      } catch { return false; }
+    })();
+    if (!_evaluated) {
+      try {
+        fs.mkdirSync(pdfDir, { recursive: true });
+        const ab = await file.arrayBuffer();
+        fs.writeFileSync(pdfSavePath, Buffer.from(ab));
+        fs.writeFileSync(pdfMetaPath, JSON.stringify({ name: file.name }), "utf8");
+      } catch (e) {
+        console.error("Failed to save PDF:", e);
+      }
     }
 
     if (currentPdfUrl) URL.revokeObjectURL(currentPdfUrl);
@@ -921,14 +939,12 @@
     cpp: {
       srcFile:    "temp.cpp",
       exeFile:    process.platform === "win32" ? "temp.exe" : "temp",
-      compileCmd: (src, exe) => `g++ ${src} -o ${exe} -pthread`,
       monacoLang: "cpp",
       label:      "C++",
     },
     c: {
       srcFile:    "main.c",
       exeFile:    process.platform === "win32" ? "main.exe" : "main",
-      compileCmd: (src, exe) => `gcc ${src} -o ${exe}`,
       monacoLang: "c",
       label:      "C",
     },
@@ -1025,25 +1041,25 @@
 
   document.getElementById("runCppBtn").addEventListener("click", async () => {
     if (!cppEditor) return;
-    const { exec: execNode, spawn } = nodeRequire("child_process");
+    const { spawn } = nodeRequire("child_process");
     const runDir = path.join(sessionDir, ".run");
     fs.mkdirSync(runDir, { recursive: true });
 
     const code = cppEditor.getValue();
     const stdinVal = document.getElementById("stdinBox").value || "";
     const cppFile = path.join(runDir, "temp.cpp");
-    const exeFile = path.join(runDir, process.platform === "win32" ? "temp.exe" : "temp");
+    const exeFilename = process.platform === "win32" ? "temp.exe" : "temp";
+    const exeFile = path.join(runDir, exeFilename);
 
     fs.writeFileSync(cppFile, code, "utf8");
     cppOut.reset();
-    setCppConsole("> g++ temp.cpp -o temp\n");
+    setCppConsole("> compiling temp.cpp...\n");
     setCppStatus("Compiling...");
 
-    const compile = await new Promise(res => {
-      execNode(`g++ temp.cpp -o ${process.platform === "win32" ? "temp.exe" : "temp"} -pthread`,
-        { cwd: runDir, windowsHide: true, timeout: 30000 },
-        (err, stdout, stderr) => res({ err, stdout, stderr })
-      );
+    const compile = await ipcRenderer.invoke("compile-cpp", {
+      runDir,
+      srcFile: "temp.cpp",
+      exeFile: exeFilename,
     });
 
     if (compile.stdout) appendCppConsole(compile.stdout);
@@ -1054,7 +1070,7 @@
     setCppStatus("Running...");
     setCppRunning(true);
 
-    const p = spawn(exeFile, [], { cwd: userDataPath, windowsHide: true });
+    const p = spawn(exeFile, [], { cwd: userDataPath, windowsHide: true, env: mingwSpawnEnv() });
     cppRunProcess = p;
     p.stdout.on("data", d => appendCppConsole(String(d)));
     p.stderr.on("data", d => appendCppConsole(String(d)));
@@ -1123,16 +1139,13 @@
 
     fs.writeFileSync(srcPath, code, "utf8");
     cOut.reset();
-    setCConsole(`> gcc ${cfg.srcFile} -o ${cfg.exeFile}\n`);
+    setCConsole(`> compiling ${cfg.srcFile}...\n`);
     setCStatus("Compiling...");
 
-    const compile = await new Promise(res => {
-      const { exec: execNode } = nodeRequire("child_process");
-      execNode(
-        cfg.compileCmd(cfg.srcFile, cfg.exeFile),
-        { cwd: runDir, windowsHide: true, timeout: 30000 },
-        (err, stdout, stderr) => res({ err, stdout, stderr })
-      );
+    const compile = await ipcRenderer.invoke("compile-c", {
+      runDir,
+      srcFile: cfg.srcFile,
+      exeFile: cfg.exeFile,
     });
 
     if (compile.stdout) appendCConsole(compile.stdout);
@@ -1144,7 +1157,7 @@
     setCRunning(true);
 
     const { spawn: spawnC } = nodeRequire("child_process");
-    const p = spawnC(exePath, [], { cwd: userDataPath, windowsHide: true });
+    const p = spawnC(exePath, [], { cwd: userDataPath, windowsHide: true, env: mingwSpawnEnv() });
     cRunProcess = p;
     p.stdout.on("data", d => appendCConsole(String(d)));
     p.stderr.on("data", d => appendCConsole(String(d)));
@@ -1422,8 +1435,16 @@
     // Apply initial language (default C++)
     applyLang(langSelect.value);
     refreshFileList();
-    // Restore persisted PDF if one was uploaded in a previous session
-    loadSavedPdf();
+    // Restore persisted PDF only when session is still running.
+    // If evaluated, the old PDF was already deleted at mark-time; skip restore.
+    ((() => {
+      try {
+        const sf = path.join(userDataPath, "session.json");
+        const s  = fs.existsSync(sf) ? JSON.parse(fs.readFileSync(sf, "utf8")) : {};
+        if (s && s.status === "evaluated") return;
+      } catch {}
+      loadSavedPdf();
+    })());
     setStatus("Ready");
     initPanelSizes();
     layoutAllEditors();
